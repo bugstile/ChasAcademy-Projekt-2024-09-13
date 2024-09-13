@@ -1,8 +1,13 @@
 html {
-    font-family: Arial, sans-serif;
+    font-family: Verdana, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #E5E9E2;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
 }
 
 ul {
@@ -10,24 +15,22 @@ ul {
     list-style:none;
 }
 
+ul li {
+    display: inline;
+    padding: 20px;
+    position: relative;
+}
+
 ul li a {
     font-size:22px;
     font-weight: bold;
     color: #E5E9E2;
-    text-decoration:none;
     text-underline-offset: 8px;
     text-decoration:underline #BFBA7E 6px;
-    margin: -6px;
 }
 
-ul li {
-    display: inline;
-    padding: 20px;
-}
-
-body {
-    padding: 0px;
-    margin: 0px;
+ul li a:hover {
+    text-decoration:underline #3D5B46 6px;
 }
 
 nav {
@@ -56,6 +59,8 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 100%;
+    height: auto;
 }
 
 footer {
@@ -64,6 +69,7 @@ footer {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    bottom: 0;
 }
 
 .triangle-down {
@@ -75,13 +81,22 @@ footer {
     border-top: 20px solid #99BE7E;
   }
 
+.sticky {
+    display:none;
+    transition: transform 1.5s ease;
+}
+
+.sticky:hover {
+    transform: rotate(360deg);
+}
+
 @media (max-width: 768px){
     ul li a{
         font-size: 26px;
     }
     ul {
         line-height: 26px;
-        display:flex;
+        display: flex;
         align-items: center;
         flex-direction: column;
     }
@@ -91,6 +106,19 @@ footer {
 }
 
 @media (min-width: 1200px){
+
+    .sticky {
+        display: block;
+        position:fixed;
+        z-index: 0;
+        bottom:0;
+        position: fixed;
+        top: 10px; 
+        right: 10px; 
+        width: 200px; 
+        z-index: 1000; 
+    }
+
     section {
         padding-top: 80px;
     }
@@ -99,21 +127,33 @@ footer {
         display: flex;
         padding: 20px;
         flex-direction: row;
-        align-items: center;
+        align-items: stretch;
     }
+
     .content p {
         padding: 20px;
         margin-right: 10px;
         margin-left: 10px;
+        width: 48%;
     }
 
     section h2{
         padding: 20px;
-        text-align:center; 
+        text-align: center; 
+    }
+
+    .img {
+        padding-bottom: 100px;
+    }
+
+    footer {
+        position:fixed;
+        background-color: rgba(153, 190, 126, 0.75);
     }
 }
 
 @media (min-width: 1400px){
+
     section{
         font-size: 24px;
         padding-top:80px;
@@ -122,13 +162,13 @@ footer {
         padding-left:15%;
     }
 
+    section p {
+        position:relative;
+        z-index: 50;
+    }
+
     .content p {
         margin-right: 20px;
         margin-left: 20px;
-    }
-
-    section h2{
-        padding: 20px;
-        text-align:center; 
     }
 }
