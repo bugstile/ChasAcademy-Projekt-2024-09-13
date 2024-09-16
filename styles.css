@@ -172,6 +172,10 @@ footer {
         padding-left:15%;
     }
 
+    .img img {
+        width: 500px;
+    }
+
     section p {
         position:relative;
         z-index: 50;
