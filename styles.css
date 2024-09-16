@@ -106,7 +106,6 @@ footer {
 }
 
 @media (min-width: 1200px){
-
     .sticky {
         display: block;
         position:fixed;
@@ -153,7 +152,6 @@ footer {
 }
 
 @media (min-width: 1400px){
-
     section{
         font-size: 24px;
         padding-top:80px;
