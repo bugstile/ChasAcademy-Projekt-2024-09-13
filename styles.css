@@ -99,7 +99,7 @@ footer {
 
 @media (max-width: 768px){
     .triangle-down {
-        left: 48%;
+        left: 47%;
     }
 
     ul li a{
@@ -117,6 +117,10 @@ footer {
 }
 
 @media (min-width: 1200px){
+
+    .triangle-down {
+        left: 48.5%;
+    }
 
     .sticky {
         display: block;
@@ -164,6 +168,11 @@ footer {
 }
 
 @media (min-width: 1400px){
+
+    .triangle-down {
+        left: 49%;
+    }
+
     section{
         font-size: 24px;
         padding-top:80px;
