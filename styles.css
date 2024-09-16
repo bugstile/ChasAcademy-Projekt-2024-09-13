@@ -21,6 +21,11 @@ ul li {
     position: relative;
 }
 
+article {
+    padding: 0;
+    margin: 0;
+}
+
 ul li a {
     font-size:22px;
     font-weight: bold;
@@ -75,6 +80,8 @@ footer {
 .triangle-down {
     width: 0;
     height: 0;
+    position:absolute;
+    left: 50%;
     margin: auto;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
@@ -82,7 +89,7 @@ footer {
   }
 
 .sticky {
-    display:none;
+    display: none;
     transition: transform 1.5s ease;
 }
 
@@ -91,6 +98,10 @@ footer {
 }
 
 @media (max-width: 768px){
+    .triangle-down {
+        left: 48%;
+    }
+
     ul li a{
         font-size: 26px;
     }
@@ -106,6 +117,7 @@ footer {
 }
 
 @media (min-width: 1200px){
+
     .sticky {
         display: block;
         position:fixed;
@@ -122,14 +134,14 @@ footer {
         padding-top: 80px;
     }
 
-    .content {
+    article {
         display: flex;
         padding: 20px;
         flex-direction: row;
         align-items: stretch;
     }
 
-    .content p {
+    article p {
         padding: 20px;
         margin-right: 10px;
         margin-left: 10px;
@@ -165,7 +177,7 @@ footer {
         z-index: 50;
     }
 
-    .content p {
+    article p {
         margin-right: 20px;
         margin-left: 20px;
     }
