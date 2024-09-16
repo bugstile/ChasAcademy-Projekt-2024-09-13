@@ -12,7 +12,7 @@ body {
 
 ul {
     padding: 10px;
-    list-style:none;
+    list-style: none;
 }
 
 ul li {
@@ -27,19 +27,19 @@ article {
 }
 
 ul li a {
-    font-size:22px;
+    font-size: 22px;
     font-weight: bold;
     color: #E5E9E2;
     text-underline-offset: 8px;
-    text-decoration:underline #BFBA7E 6px;
+    text-decoration: underline #BFBA7E 6px;
 }
 
 ul li a:hover {
-    text-decoration:underline #3D5B46 6px;
+    text-decoration: underline #3D5B46 6px;
 }
 
 nav {
-    padding:10px;
+    padding: 10px;
 }
 
 header {
@@ -80,7 +80,7 @@ footer {
 .triangle-down {
     width: 0;
     height: 0;
-    position:absolute;
+    position: absolute;
     left: 50%;
     margin: auto;
     border-left: 20px solid transparent;
@@ -126,7 +126,7 @@ footer {
         display: block;
         position: fixed;
         z-index: 0;
-        bottom:0;
+        bottom: 0;
         position: fixed;
         top: 10px; 
         right: 10px; 
