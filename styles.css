@@ -124,7 +124,7 @@ footer {
 
     .sticky {
         display: block;
-        position:fixed;
+        position: fixed;
         z-index: 0;
         bottom:0;
         position: fixed;
@@ -162,7 +162,7 @@ footer {
     }
 
     footer {
-        position:fixed;
+        position: fixed;
         background-color: rgba(153, 190, 126, 0.75);
     }
 }
